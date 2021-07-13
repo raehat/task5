@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StageOne.StageOne">
+
+    <TextView
+        android:id="@+id/options_text"
+        android:layout_width="343dp"
+        android:layout_height="wrap_content"
+        android:textSize="34sp"
+        android:text="Options"
+        android:layout_marginTop="88dp"
+        android:layout_marginLeft="16dp"
+        android:textStyle="bold"
+        android:textColor="#000"></TextView>
+
+    <TextView
+        android:id="@+id/text_important"
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        android:textSize="14sp"
+        android:textColor="#000"
+        android:text="Important"
+        android:layout_below="@id/options_text"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="16dp"></TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_important"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        tools:listitem="@layout/card_view"
+        android:layout_below="@id/text_important"
+        android:layout_marginTop="12dp"></androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/text_files"
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        android:layout_marginTop="307dp"
+        android:textSize="14sp"
+        android:textColor="#000"
+        android:text="Files"
+        android:layout_marginLeft="16dp"></TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_files"
+        android:layout_width="wrap_content"
+        android:layout_height="93dp"
+        tools:listitem="@layout/card_view"
+        android:layout_below="@id/text_files"
+        android:layout_marginTop="12dp"></androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/text_others"
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        android:textSize="14sp"
+        android:textColor="#000"
+        android:text="Options"
+        android:layout_below="@id/recycler_view_files"
+        android:layout_marginTop="31dp"
+        android:layout_marginLeft="16dp"></TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_options"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        tools:listitem="@layout/card_view"
+        android:layout_below="@id/text_others"
+        android:labelFor="@id/recycler_view_files"
+        android:layout_marginTop="12dp"></androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

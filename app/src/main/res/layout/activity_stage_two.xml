@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StageTwo.StageTwo">
+
+    <TextView
+        android:id="@+id/text_pets"
+        android:layout_height="41dp"
+        android:layout_width="343dp"
+        android:layout_marginTop="88dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="34dp"
+        android:text="Pets"
+        android:textStyle="bold"
+        android:textColor="#000"></TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_pets"
+        android:layout_width="wrap_content"
+        android:layout_height="500dp"
+        tools:listitem="@layout/card_view_pets"
+        android:layout_below="@id/text_pets"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"></androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>

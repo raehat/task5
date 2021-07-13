@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/table_view"
+        android:layout_width="343dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="sans-serif-black"
+        android:paddingLeft="16dp"
+        android:text="Table View"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        android:textStyle="bold"></TextView>
+
+    <Button
+            android:id="@+id/stage_1"
+            android:layout_width="319dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="316dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#2286E2"
+            android:background="@drawable/button_desgin"
+            android:text="STAGE 1"></Button>
+
+    <Button
+        android:id="@+id/stage_2"
+        android:layout_width="319dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/stage_1"
+        android:layout_marginTop="15dp"
+        android:textColor="#2286E2"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_desgin"
+        android:text="STAGE 2"></Button>
+
+    <Button
+        android:id="@+id/stage_3"
+        android:layout_width="319dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/stage_2"
+        android:layout_marginTop="15dp"
+        android:textColor="#2286E2"
+        android:background="@drawable/button_desgin"
+        android:layout_centerHorizontal="true"
+        android:text="STAGE 3"></Button>
+
+
+</RelativeLayout>
